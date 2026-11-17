@@ -1,1 +1,97 @@
-
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MBlaschke Software – Programme und Lazarus-Komponenten für Linux.">
+  <meta name="theme-color" content="#0c172b">
+  <title>MBlaschke Software | Programme für Linux</title>
+  <style>
+    :root { color-scheme: dark; --bg:#091322; --surface:#14233b; --border:#2d405c; --text:#f0f5ff; --muted:#b7c6dc; --accent:#70c5ff; --accent2:#7ee3bd; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--text); background:radial-gradient(circle at 85% 5%,#203f66 0,transparent 35%),var(--bg); line-height:1.65; }
+    a { color:var(--accent); }
+    a:focus-visible { outline:3px solid var(--accent2); outline-offset:4px; border-radius:4px; }
+    .wrap { width:min(1100px,calc(100% - 36px)); margin:auto; }
+    header { border-bottom:1px solid var(--border); background:#0a1627dc; }
+    .top { display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap; padding:18px 0; }
+    .logo { font-size:1.2rem; font-weight:800; color:white; letter-spacing:.015em; text-decoration:none; }
+    .logo span { color:var(--accent2); }
+    nav { display:flex; flex-wrap:wrap; gap:20px; }
+    nav a { text-decoration:none; color:var(--muted); font-weight:600; }
+    nav a:hover { color:white; }
+    .hero { padding:90px 0 70px; }
+    .eyebrow { font-weight:800; letter-spacing:.14em; text-transform:uppercase; font-size:.78rem; color:var(--accent2); }
+    h1 { font-size:clamp(2.4rem,7vw,4.65rem); letter-spacing:-.045em; line-height:1.1; margin:14px 0 22px; max-width:850px; }
+    .hero p { max-width:730px; color:var(--muted); font-size:1.15rem; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:30px; }
+    .btn { display:inline-block; padding:12px 22px; border-radius:10px; font-weight:750; text-decoration:none; border:1px solid var(--border); color:white; }
+    .btn.primary { background:var(--accent); border-color:var(--accent); color:#071322; }
+    .btn:hover { filter:brightness(1.12); }
+    section { padding:42px 0 62px; }
+    h2 { font-size:clamp(1.6rem,4vw,2.1rem); margin:0 0 10px; }
+    .intro { color:var(--muted); margin:0 0 26px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr)); gap:18px; }
+    .card { border:1px solid var(--border); background:linear-gradient(155deg,#1a2d49,#101d32); border-radius:16px; padding:26px; }
+    .symbol { display:inline-flex; align-items:center; justify-content:center; font-size:1.5rem; width:54px; height:54px; border-radius:12px; background:#294662; margin-bottom:10px; }
+    .card h3 { margin:8px 0; font-size:1.24rem; }
+    .card p { color:var(--muted); margin:0; }
+    .about { background:#101e32; border-block:1px solid var(--border); }
+    .about p { max-width:800px; color:var(--muted); }
+    .contact { border:1px solid var(--border); border-radius:16px; padding:28px; background:var(--surface); }
+    .contact p { margin:8px 0; color:var(--muted); }
+    footer { padding:30px 0; color:var(--muted); font-size:.9rem; border-top:1px solid var(--border); }
+    @media (max-width:600px) { .hero { padding:62px 0 45px; } .top { align-items:flex-start; } nav { gap:12px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <a class="logo" href="#start">MBlaschke <span>Software</span></a>
+      <nav aria-label="Hauptnavigation">
+        <a href="#projekte">Projekte</a>
+        <a href="#ueber">Über mich</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="wrap hero" id="start">
+      <div class="eyebrow">Softwareentwicklung mit Lazarus &amp; Free Pascal</div>
+      <h1>Praktische Programme.<br>Mit Freude entwickelt.</h1>
+      <p>Willkommen bei MBlaschke Software! Hier stelle ich meine Softwareprojekte und Komponenten für Linux vor – von der Adressverwaltung bis zu Werkzeugen für Lazarus.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projekte">Projekte entdecken</a>
+        <a class="btn" href="#kontakt">Kontakt aufnehmen</a>
+      </div>
+    </div>
+    <section id="projekte" class="wrap">
+      <h2>Meine Projekte</h2>
+      <p class="intro">Ein Einblick in Programme und Komponenten, an denen ich arbeite.</p>
+      <div class="grid">
+        <article class="card"><div class="symbol" aria-hidden="true">📇</div><h3>OpenAddressManager</h3><p>Adressverwaltung für Linux mit Etikettengestaltung, Druckfunktionen und weiteren praktischen Werkzeugen.</p></article>
+        <article class="card"><div class="symbol" aria-hidden="true">🔐</div><h3>PlasmaFprintGUIPro</h3><p>Grafische Oberfläche zur Verwaltung von Fingerabdrücken unter Linux und KDE Plasma.</p></article>
+        <article class="card"><div class="symbol" aria-hidden="true">⚙️</div><h3>OpenLazarusSetup</h3><p>Werkzeuge rund um die Einrichtung und Aktualisierung von Lazarus-Software.</p></article>
+        <article class="card"><div class="symbol" aria-hidden="true">🧩</div><h3>Lazarus-Komponenten</h3><p>Wiederverwendbare Komponenten, die die Entwicklung eigener Anwendungen erleichtern.</p></article>
+      </div>
+    </section>
+    <section id="ueber" class="about">
+      <div class="wrap">
+        <h2>Über MBlaschke Software</h2>
+        <p>Mein Schwerpunkt liegt auf eigenen Anwendungen und Komponenten mit Lazarus und Free Pascal. Ich entwickle gerne Lösungen, die übersichtlich sind und im Alltag einen konkreten Nutzen haben.</p>
+        <p>Diese Website wird nach und nach um weitere Projekte und Informationen ergänzt.</p>
+      </div>
+    </section>
+    <section id="kontakt" class="wrap">
+      <div class="contact">
+        <h2>Kontakt</h2>
+        <p>Fragen oder Anregungen? Ich freue mich über eine Nachricht.</p>
+        <p><a href="mailto:privat.matthias.blaschke@mail.de">privat.matthias.blaschke@mail.de</a></p>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">© <span id="year">2026</span> MBlaschke Software · Erstellt mit HTML und CSS</div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
