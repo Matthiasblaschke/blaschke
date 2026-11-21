@@ -1,0 +1,2 @@
+1.0.0
+https://github.com/Matthiasblaschke/blaschke/releases/download/badr-v1.0.0/badr_1.0.0_amd64-Setup.zip
